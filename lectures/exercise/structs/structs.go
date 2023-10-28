@@ -19,6 +19,17 @@ package main
 
 import "fmt"
 
-func main() {
+type Rectangle struct {
+  length, width int
+}
 
+func area(x,y int) int {
+  return x*y
+}
+
+func main() {
+  myrect := Rectangle{3, 5}
+  fmt.Println(myrect)
+  mysize := area(myrect.length, myrect.width)
+  fmt.Println(mysize)
 }
